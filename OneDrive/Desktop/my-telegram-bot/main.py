@@ -1,10 +1,7 @@
 import os
-from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-from flask import Flask
-import threading
 
 TOKEN = os.environ.get("TOKEN")
+print("TOKEN:", TOKEN)  # ← Bu debug uchun, TOKEN qiymatini ko‘rsatadi
 
 app_web = Flask("")
 
