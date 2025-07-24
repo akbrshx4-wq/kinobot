@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-cinema-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TOKEN
+        value: 7523554808:AAHJqaAd59NndnsjAUk9XfnitlviHDFVM-I
