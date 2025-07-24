@@ -4,7 +4,6 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from flask import Flask
 import threading
 
-# ✅ TOKEN environment orqali olinadi
 TOKEN = os.environ.get("TOKEN")
 
 app_web = Flask("")
