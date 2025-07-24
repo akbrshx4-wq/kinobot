@@ -6,4 +6,7 @@ services:
     startCommand: "python main.py"
     envVars:
       - key: TOKEN
-        value: ${TOKEN}
+        fromService:
+          type: web
+          name: telegram-cinema-bot
+          envVarKey: TOKEN
